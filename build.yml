@@ -1,10 +1,10 @@
 name: Build EXE safely
 
-on: [push, workflow_dispatch] # Runs every time you upload or click "Run"
+on: [push, workflow_dispatch]
 
 jobs:
   build:
-    runs-on: windows-latest # This is the "Safe Room" (Windows VM)
+    runs-on: windows-latest
 
     steps:
     - name: Checkout code
@@ -19,7 +19,7 @@ jobs:
       run: pip install pyinstaller
 
     - name: Build the EXE
-      run: pyinstaller --onefile my_script.py # Replace your_script.py with your file name
+      run: pyinstaller --onefile my_script.py
 
     - name: Upload Result
       uses: actions/upload-artifact@v4
