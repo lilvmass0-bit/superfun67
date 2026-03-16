@@ -14,7 +14,6 @@ def main():
     global Name, Score, Health
     print(f"Hello, {Name}!")
     print(f"Hello, {Name}!")
-    print(f"Hello, {Name}!")
 
 if __name__ == "__main__":
     main()
