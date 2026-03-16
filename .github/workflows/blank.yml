@@ -19,7 +19,7 @@ jobs:
       run: pip install pyinstaller
 
     - name: Build the EXE
-      run: pyinstaller --onefile your_script.py # Replace your_script.py with your file name
+      run: pyinstaller --onefile my_script.py
 
     - name: Upload Result
       uses: actions/upload-artifact@v4
